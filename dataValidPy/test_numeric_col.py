@@ -101,7 +101,7 @@ class test_greater_than_value_class(col_setUp, lower_bound, test_fail):
         :type lower: float or int
         """
 
-        self.td = "Less than value (<)"
+        self.td = "Greater than value (>)"
 
         col_setUp.__init__(self, series)
         lower_bound.__init__(self, lower)
@@ -110,7 +110,7 @@ class test_greater_than_value_class(col_setUp, lower_bound, test_fail):
         self._test()
 
     def _test_message(self):
-        return "Values outside of upper bound"
+        return "Values outside of lower bound"
 
     def _test(self):
         if self.min > self.lower:
@@ -128,7 +128,7 @@ class test_greater_than_or_equal_value_class(col_setUp, lower_bound, test_fail):
         :type lower: float or int
         """
 
-        self.td = "Less than value (<)"
+        self.td = "Greater than value (>)"
 
         col_setUp.__init__(self, series)
         lower_bound.__init__(self, lower)
@@ -137,7 +137,7 @@ class test_greater_than_or_equal_value_class(col_setUp, lower_bound, test_fail):
         self._test()
 
     def _test_message(self):
-        return "Values outside of upper bound"
+        return "Values outside of lower bound"
 
     def _test(self):
         if self.min >= self.lower:

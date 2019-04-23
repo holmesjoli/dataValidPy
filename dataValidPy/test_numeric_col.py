@@ -167,7 +167,7 @@ class test_exclu_value_range_class(value_range):
 
     def __init__(self, series, lower, upper):
         """
-        Initiates the test class for the inclusive values range 
+        Initiates the test class for the exclusive values range 
         Tests that lower < X < upper is True
         :param series: the column to test
         :type series: pandas series

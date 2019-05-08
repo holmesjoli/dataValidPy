@@ -202,7 +202,7 @@ class test_exclu_lower_inclu_upper_range_class(value_range):
         value_range.__init__(self, series, lower, upper)
 
         self._test()
- 
+
     def _test(self):
         if self.min > self.lower and self.max <= self.upper:
             test_pass.__init__(self)

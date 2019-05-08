@@ -133,7 +133,7 @@ class col_setUp(col_types):
 class fail_upstream(test_fail, col_level, df_level):
 
     def __init__(self, cl):
-        self.td = cl.td 
+        self.td = cl.td
         test_fail.__init__(self, "Failed because upstream test failed")
         col_level.__init__(self)
         df_level.__init__(self)

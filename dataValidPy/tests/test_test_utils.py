@@ -39,7 +39,6 @@ class UtilsTestClass(unittest.TestCase):
         self.assertTrue(hasattr(tf, "tm"))
 
     def test_indicator(self):
-
         self.ti(self.tp_ti, self.tw_ti, self.tf_ti)
         self.tm(self.tp_tm, self.tw_tm, self.tf_tm)
         self.ti(self.tp, self.tw, self.tf)

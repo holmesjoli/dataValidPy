@@ -1,7 +1,7 @@
 import pandas as pd
 from dataValidPy.test_utils import test_pass, test_fail, test_warn, df_setUp, cls_to_df
 
-class test_expc_cols_class(df_setUp):
+class test_expc_cols_class(df_setUp, test_fail):
     
     def __init__(self, df, expc_cols):
         """
@@ -29,7 +29,7 @@ class test_expc_cols_class(df_setUp):
         if len(self.missing_cols) == 0:
             test_pass.__init__(self)
 
-class test_unexpc_cols_class(df_setUp):
+class test_unexpc_cols_class(df_setUp, test_warn):
     
     def __init__(self, df, expc_cols):
         """

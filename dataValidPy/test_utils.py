@@ -1,5 +1,4 @@
 import pandas as pd
-
 from utilsPy.col_types import col_types
 
 def cls_to_dct(cl):
@@ -43,7 +42,7 @@ class test_pass_tm(object):
     def __init__(self):
         self.tm = ""
 
-class test_pass(object):
+class test_pass(test_pass_ti, test_pass_tm):
 
     def __init__(self):
         """
@@ -62,7 +61,7 @@ class test_fail_tm(object):
     def __init__(self, tm):
         self.tm = tm
 
-class test_fail(object):
+class test_fail(test_fail_ti, test_fail_tm):
 
     def __init__(self, tm):
         """
@@ -81,7 +80,7 @@ class test_warn_tm(object):
     def __init__(self, tm):
         self.tm = tm
 
-class test_warn(object):
+class test_warn(test_warn_ti, test_warn_tm):
 
     def __init__(self, tm):
         """
@@ -131,7 +130,7 @@ class col_setUp(col_types):
             self.mean = self.col.mean()
             self.median = self.col.median()
 
-class fail_upstream(object):
+class fail_upstream(test_fail, col_level, df_level):
 
     def __init__(self, cl):
         self.td = cl.td 

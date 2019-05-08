@@ -1,7 +1,7 @@
 import numpy as np
 from dataValidPy.test_utils import test_pass, test_fail, col_setUp, cls_to_df
 
-class test_type_class(col_setUp):
+class test_type_class(col_setUp, test_fail):
 
     def __init__(self, series, expc_type):
         """

@@ -125,7 +125,7 @@ class NumericColsTestClass(unittest.TestCase):
 
         self.assertTrue(hasattr(self.tgtv4, "td"))
         self.assertEqual(self.tgtv4.ti, test_fail("blah").ti)
-        self.assertNotEqual(self.tgtv4.tm, test_pass().tm)        
+        self.assertNotEqual(self.tgtv4.tm, test_pass().tm)
 
     def test_test_gte_value_class(self):
         self.assertTrue(hasattr(self.tgtev1, "td"))
@@ -147,7 +147,7 @@ class NumericColsTestClass(unittest.TestCase):
         self.assertTrue(hasattr(self.tgtev5, "td"))
         self.assertEqual(self.tgtev5.ti, test_pass().ti)
         self.assertEqual(self.tgtev5.tm, test_pass().tm)
-        
+
         self.assertTrue(hasattr(self.tgtev6, "td"))
         self.assertEqual(self.tgtev6.ti, test_fail("blah").ti)
         self.assertNotEqual(self.tgtev6.tm, test_pass().tm)

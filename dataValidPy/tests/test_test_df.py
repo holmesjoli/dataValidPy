@@ -21,7 +21,7 @@ class DfTestClass(unittest.TestCase):
                         "col2": ["x", "y", "z"],
                         "col3": [True, False, True],
                         "col4": [7, 8, 9]}
-        
+
         self.df1 = pd.DataFrame(self.df_dct1)
         self.df2 = pd.DataFrame(self.df_dct2)
         self.df3 = pd.DataFrame(self.df_dct3)

@@ -51,7 +51,7 @@ class ColsTestClass(unittest.TestCase):
         self.assertTrue(hasattr(self.tu4, "td"))
         self.assertEqual(self.tu4.ti, test_fail("blah").ti)
         self.assertNotEqual(self.tu4.tm, test_pass().tm)
-    
+
     def test_test_expc_values_class(self):
         self.assertTrue(hasattr(self.tv1, "td"))
         self.assertEqual(self.tv1.ti, test_pass().ti)

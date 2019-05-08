@@ -50,7 +50,7 @@ class test_unexpc_cols_class(df_setUp, test_warn):
         test_warn.__init__(self, tm = self._test_message())
 
         self._test()
-        
+
     def _test_message(self):
         return "Extra columns: {}".format(", ".join(self.extra_cols))
 
@@ -65,4 +65,4 @@ def test_expc_cols(df, expc_cols):
 
 @cls_to_df
 def test_unexpc_cols(df, expc_cols):
-    return test_unexpc_cols_class(df, expc_cols)       
+    return test_unexpc_cols_class(df, expc_cols)

@@ -18,11 +18,11 @@ class UtilsTestClass(unittest.TestCase):
 
         self.tp_ti = test_pass_ti()
         self.tw_ti = test_warn_ti()
-        self.tf_ti = test_fail_ti() 
+        self.tf_ti = test_fail_ti()
 
         self.tp_tm = test_pass_tm()
         self.tw_tm = test_warn_tm(tm = "blah")
-        self.tf_tm = test_fail_tm(tm = "blah") 
+        self.tf_tm = test_fail_tm(tm = "blah")
 
         self.tp = test_pass()
         self.tw = test_warn(tm = "blah")
@@ -32,7 +32,7 @@ class UtilsTestClass(unittest.TestCase):
         self.assertTrue(hasattr(tp, "ti"))
         self.assertTrue(hasattr(tw, "ti"))
         self.assertTrue(hasattr(tf, "ti"))
-    
+
     def tm(self, tp, tw, tf):
         self.assertTrue(hasattr(tp, "tm"))
         self.assertTrue(hasattr(tw, "tm"))

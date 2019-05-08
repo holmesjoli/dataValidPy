@@ -37,7 +37,7 @@ class test_less_than_value_class(col_setUp, upper_bound, test_fail):
 
     def __init__(self, series, upper):
         """
-        Initiates the test class for the less than value class.  
+        Initiates the test class for the less than value class.
         Tests that X < upper is True
         :param series: the column to test
         :type series: pandas series
@@ -118,7 +118,7 @@ class test_greater_than_or_equal_value_class(col_setUp, lower_bound, test_fail):
 
     def __init__(self, series, lower):
         """
-        Initiates the test class for the greater than value class.  
+        Initiates the test class for the greater than value class.
         Tests that X >= lower is True
         :param series: the column to test
         :type series: pandas series
@@ -165,7 +165,7 @@ class test_exclu_value_range_class(value_range):
 
     def __init__(self, series, lower, upper):
         """
-        Initiates the test class for the exclusive values range 
+        Initiates the test class for the exclusive values range.
         Tests that lower < X < upper is True
         :param series: the column to test
         :type series: pandas series
@@ -187,7 +187,7 @@ class test_inclu_value_range_class(value_range):
 
     def __init__(self, series, lower, upper):
         """
-        Initiates the test class for the inclusive values range 
+        Initiates the test class for the inclusive values range.
         Tests that lower <= X <= upper is True
         :param series: the column to test
         :type series: pandas series
@@ -231,7 +231,7 @@ class test_inclu_lower_exclu_upper_range_class(value_range):
 
     def __init__(self, series, lower, upper):
         """
-        Initiates the test class for the values range 
+        Initiates the test class for the values range.
         Tests that lower <= X < upper is True
         :param series: the column to test
         :type series: pandas series
@@ -244,7 +244,7 @@ class test_inclu_lower_exclu_upper_range_class(value_range):
         value_range.__init__(self, series, lower, upper)
     
         self._test()
-       
+
     def _test(self):
         if self.min >= self.lower and self.max < self.upper:
             test_pass.__init__(self)

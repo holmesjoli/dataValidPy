@@ -35,7 +35,7 @@ class df_level(object):
 class test_pass_ti(object):
 
     def __init__(self):
-        self.ti = "PASS"    
+        self.ti = "PASS"
 
 class test_pass_tm(object):
 
@@ -54,7 +54,7 @@ class test_pass(test_pass_ti, test_pass_tm):
 class test_fail_ti(object):
 
     def __init__(self):
-        self.ti = "ERROR"    
+        self.ti = "ERROR"
 
 class test_fail_tm(object):
 
@@ -73,7 +73,7 @@ class test_fail(test_fail_ti, test_fail_tm):
 class test_warn_ti(object):
 
     def __init__(self):
-        self.ti = "WARNING"    
+        self.ti = "WARNING"
 
 class test_warn_tm(object):
 
@@ -110,7 +110,7 @@ class col_setUp(col_types):
         :param series: the column to test
         :type series: pandas series
         """
-        col_types.__init__(self) 
+        col_types.__init__(self)
         
         self.col = series
         self.col_name = self.col.name
@@ -136,5 +136,5 @@ class fail_upstream(test_fail, col_level, df_level):
         self.td = cl.td 
         test_fail.__init__(self, "Failed because upstream test failed")
         col_level.__init__(self)
-        df_level.__init__(self)       
+        df_level.__init__(self)
             

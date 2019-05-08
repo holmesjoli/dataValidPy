@@ -7,7 +7,7 @@ from dataValidPy.test_bool import test_all_true, test_all_false, test_any_true, 
 class BoolColsTestClass(unittest.TestCase):
  
     def __init__(self, *args, **kwargs):
- 
+
         super(BoolColsTestClass, self).__init__(*args, **kwargs)
 
         self.df = pd.DataFrame({"col1": [True, True],

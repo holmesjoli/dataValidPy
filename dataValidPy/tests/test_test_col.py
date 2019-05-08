@@ -2,7 +2,7 @@ import unittest
 import pandas as pd
 import numpy as np
 
-from dataValidPy.test_utils import test_pass, test_fail, test_warn
+from dataValidPy.test_utils import test_pass, test_fail
 from dataValidPy.test_col import test_unique_class, test_values_class, test_null_values_class
 
 class ColsTestClass(unittest.TestCase):

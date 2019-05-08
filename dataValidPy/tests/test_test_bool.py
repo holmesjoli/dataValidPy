@@ -1,6 +1,5 @@
 import unittest
 import pandas as pd
-import numpy as np
 
 from dataValidPy.test_utils import test_pass, test_fail
 from dataValidPy.test_bool import test_all_true, test_all_false, test_any_true, test_any_false

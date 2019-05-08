@@ -1,4 +1,3 @@
-import pandas as pd
 import numpy as np
 
 from dataValidPy.test_utils import test_pass, test_fail, col_setUp, cls_to_df

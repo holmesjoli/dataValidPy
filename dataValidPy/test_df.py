@@ -1,6 +1,5 @@
 import pandas as pd
-import numpy as np
-from dataValidPy.test_utils import test_pass, test_fail, test_warn, df_setUp, df_level, cls_to_df
+from dataValidPy.test_utils import test_pass, test_fail, test_warn, df_setUp, cls_to_df
 
 class test_expc_cols_class(df_setUp):
     

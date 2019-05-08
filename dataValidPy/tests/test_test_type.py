@@ -1,8 +1,7 @@
 import unittest
 import pandas as pd
-import numpy as np
 
-from dataValidPy.test_utils import test_pass, test_fail, test_warn
+from dataValidPy.test_utils import test_pass, test_fail
 from dataValidPy.test_type import test_type_class
 
 class TypesTestClass(unittest.TestCase):

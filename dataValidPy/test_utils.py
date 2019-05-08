@@ -111,7 +111,7 @@ class col_setUp(col_types):
         :type series: pandas series
         """
         col_types.__init__(self)
-        
+
         self.col = series
         self.col_name = self.col.name
         self.col_type = self.col.dtype
@@ -137,4 +137,4 @@ class fail_upstream(test_fail, col_level, df_level):
         test_fail.__init__(self, "Failed because upstream test failed")
         col_level.__init__(self)
         df_level.__init__(self)
-            
+     

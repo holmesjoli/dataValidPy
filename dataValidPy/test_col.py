@@ -79,3 +79,4 @@ def test_values(series, expc_values):
 @cls_to_df
 def test_null_values(series):
     return test_null_values_class(series)
+    

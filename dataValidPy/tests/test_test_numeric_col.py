@@ -10,9 +10,9 @@ from dataValidPy.test_numeric_col import test_less_than_value_class, \
 from dataValidPy.test_utils import test_pass, test_fail
 
 class NumericColsTestClass(unittest.TestCase):
- 
+
     def __init__(self, *args, **kwargs):
- 
+
         super(NumericColsTestClass, self).__init__(*args, **kwargs)
 
         self.df_dct = {"col1": [2, 6, 5, 7, 8, 9, 10],
@@ -93,7 +93,7 @@ class NumericColsTestClass(unittest.TestCase):
         self.assertTrue(hasattr(self.tltev2, "td"))
         self.assertEqual(self.tltev2.ti, test_pass().ti)
         self.assertEqual(self.tltev2.tm, test_pass().tm)
-        
+
         self.assertTrue(hasattr(self.tltev3, "td"))
         self.assertEqual(self.tltev3.ti, test_fail("blah").ti)
         self.assertNotEqual(self.tltev3.tm, test_pass().tm)
@@ -105,7 +105,7 @@ class NumericColsTestClass(unittest.TestCase):
         self.assertTrue(hasattr(self.tltev5, "td"))
         self.assertEqual(self.tltev5.ti, test_pass().ti)
         self.assertEqual(self.tltev5.tm, test_pass().tm)
-        
+
         self.assertTrue(hasattr(self.tltev6, "td"))
         self.assertEqual(self.tltev6.ti, test_fail("blah").ti)
         self.assertNotEqual(self.tltev6.tm, test_pass().tm)
@@ -135,7 +135,7 @@ class NumericColsTestClass(unittest.TestCase):
         self.assertTrue(hasattr(self.tgtev2, "td"))
         self.assertEqual(self.tgtev2.ti, test_pass().ti)
         self.assertEqual(self.tgtev2.tm, test_pass().tm)
-        
+
         self.assertTrue(hasattr(self.tgtev3, "td"))
         self.assertEqual(self.tgtev3.ti, test_fail("blah").ti)
         self.assertNotEqual(self.tgtev3.tm, test_pass().tm)
@@ -231,3 +231,4 @@ class NumericColsTestClass(unittest.TestCase):
         self.assertTrue(hasattr(self.tileu4, "td"))
         self.assertEqual(self.tileu4.ti, test_fail("blah").ti)
         self.assertNotEqual(self.tileu4.tm, test_pass().tm)
+        

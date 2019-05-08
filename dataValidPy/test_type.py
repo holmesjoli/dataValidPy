@@ -32,3 +32,4 @@ class test_type_class(col_setUp, test_fail):
 @cls_to_df
 def test_type(series, col_type):
     return test_type_class(series, col_type)
+    

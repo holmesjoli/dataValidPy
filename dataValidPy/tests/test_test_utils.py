@@ -6,7 +6,7 @@ from dataValidPy.test_utils import test_pass_ti, test_pass_tm, test_pass, \
      col_setUp
 
 class UtilsTestClass(unittest.TestCase):
- 
+
     def __init__(self, *args, **kwargs):
 
         super(UtilsTestClass, self).__init__(*args, **kwargs)
@@ -76,4 +76,3 @@ class UtilsTestClass(unittest.TestCase):
         self.assertFalse(hasattr(col_setUp2, "max"))
         self.assertFalse(hasattr(col_setUp2, "mean"))
         self.assertFalse(hasattr(col_setUp2, "median"))
-        

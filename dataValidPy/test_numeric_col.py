@@ -83,7 +83,7 @@ class test_greater_than_value_class(col_setUp, lower_bound, test_fail):
 
     def __init__(self, series, lower):
         """
-        Initiates the test class for the greater than value class.  
+        Initiates the test class for the greater than value class.
         Tests that X > lower is True
         :param series: the column to test
         :type series: pandas series
@@ -156,9 +156,9 @@ class test_exclu_value_range_class(value_range):
         """
         self.td = "Exclusive Range (lower < X < upper)"
         value_range.__init__(self, series, lower, upper)
-    
+
         self._test()
-       
+
     def _test(self):
         if self.min > self.lower and self.max < self.upper:
             test_pass.__init__(self)
@@ -178,9 +178,9 @@ class test_inclu_value_range_class(value_range):
         """
         self.td = "Inclusive Range (lower <= X <= upper)"
         value_range.__init__(self, series, lower, upper)
-    
+
         self._test()
-       
+
     def _test(self):
         if self.min >= self.lower and self.max <= self.upper:
             test_pass.__init__(self)
@@ -200,9 +200,9 @@ class test_exclu_lower_inclu_upper_range_class(value_range):
         """
         self.td = "Exclusive lower bound, inclusive upper bound (lower < X <= upper)"
         value_range.__init__(self, series, lower, upper)
-    
+
         self._test()
-       
+ 
     def _test(self):
         if self.min > self.lower and self.max <= self.upper:
             test_pass.__init__(self)
@@ -222,13 +222,12 @@ class test_inclu_lower_exclu_upper_range_class(value_range):
         """
         self.td = "Inclusive lower bound, exclusive upper bound (lower <= X < upper)"
         value_range.__init__(self, series, lower, upper)
-    
+  
         self._test()
 
     def _test(self):
         if self.min >= self.lower and self.max < self.upper:
             test_pass.__init__(self)
-
 
 @cls_to_df
 def test_less_than_value(series, upper):
@@ -261,3 +260,4 @@ def test_exclu_lower_inclu_upper_range(series, lower, upper):
 @cls_to_df
 def test_inclu_lower_exclu_upper_range(series, lower, upper):
     return test_inclu_lower_exclu_upper_range(series, lower, upper)
+    

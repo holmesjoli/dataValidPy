@@ -32,7 +32,6 @@ class test_all_false(col_setUp, test_fail):
         if (self.col == False).all():
             test_pass.__init__(self)
 
-
 class test_any_true(col_setUp, test_fail):
 
     def __init__(self, series):

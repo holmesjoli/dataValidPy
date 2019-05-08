@@ -5,9 +5,9 @@ from dataValidPy.test_utils import test_pass, test_fail
 from dataValidPy.test_type import test_type_class
 
 class TypesTestClass(unittest.TestCase):
- 
+
     def __init__(self, *args, **kwargs):
- 
+
         super(TypesTestClass, self).__init__(*args, **kwargs)
 
         df = pd.DataFrame({"col1": [1,2,3,4],

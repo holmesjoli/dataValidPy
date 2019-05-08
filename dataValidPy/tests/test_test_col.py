@@ -6,9 +6,9 @@ from dataValidPy.test_utils import test_pass, test_fail
 from dataValidPy.test_col import test_unique_class, test_values_class, test_null_values_class
 
 class ColsTestClass(unittest.TestCase):
- 
+
     def __init__(self, *args, **kwargs):
- 
+
         super(ColsTestClass, self).__init__(*args, **kwargs)
 
         self.df_dct = {"col1": [2, 6, 5, 7, 8, 9, 10],

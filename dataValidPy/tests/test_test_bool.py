@@ -5,7 +5,7 @@ from dataValidPy.test_utils import test_pass, test_fail
 from dataValidPy.test_bool import test_all_true, test_all_false, test_any_true, test_any_false
 
 class BoolColsTestClass(unittest.TestCase):
- 
+
     def __init__(self, *args, **kwargs):
 
         super(BoolColsTestClass, self).__init__(*args, **kwargs)
@@ -81,5 +81,3 @@ class BoolColsTestClass(unittest.TestCase):
         self.assertTrue(hasattr(self.tant3, "td"))
         self.assertEqual(self.tant3.ti, test_pass().ti)
         self.assertEqual(self.tant3.tm, test_pass().tm)
-
-

@@ -5,7 +5,7 @@ from dataValidPy.test_utils import test_pass, test_fail, test_warn
 from dataValidPy.test_df import test_expc_cols_class, test_unexpc_cols_class
 
 class DfTestClass(unittest.TestCase):
- 
+
     def __init__(self, *args, **kwargs):
 
         super(DfTestClass, self).__init__(*args, **kwargs)
@@ -61,3 +61,4 @@ class DfTestClass(unittest.TestCase):
         self.assertTrue(hasattr(self.tuc3, "td"))
         self.assertEqual(self.tuc3.ti, test_warn("blah").ti)
         self.assertNotEqual(self.tuc3.tm, test_pass().tm)
+        

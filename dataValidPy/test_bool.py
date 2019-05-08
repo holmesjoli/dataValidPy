@@ -3,7 +3,11 @@ from dataValidPy.test_utils import test_pass, test_fail, col_setUp, cls_to_df
 class test_all_true_class(col_setUp, test_fail):
 
     def __init__(self, series):
-
+        """
+        Initiates the test class for test all true
+        :param series: the column to test
+        :type series: pandas series
+        """
         self.td = "All true"
 
         col_setUp.__init__(self, series)
@@ -19,6 +23,11 @@ class test_all_true_class(col_setUp, test_fail):
 class test_all_false_class(col_setUp, test_fail):
 
     def __init__(self, series):
+        """
+        Initiates the test class for test all false
+        :param series: the column to test
+        :type series: pandas series
+        """
 
         self.td = "All false"
 
@@ -35,6 +44,11 @@ class test_all_false_class(col_setUp, test_fail):
 class test_any_true_class(col_setUp, test_fail):
 
     def __init__(self, series):
+        """
+        Initiates the test class for test any true
+        :param series: the column to test
+        :type series: pandas series
+        """
 
         self.td = "Any True"
 
@@ -51,6 +65,11 @@ class test_any_true_class(col_setUp, test_fail):
 class test_any_false_class(col_setUp, test_fail):
 
     def __init__(self, series):
+        """
+        Initiates the test class for test any false
+        :param series: the column to test
+        :type series: pandas series
+        """
 
         self.td = "Any False"
 

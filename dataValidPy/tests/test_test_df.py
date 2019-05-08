@@ -1,4 +1,4 @@
-import unittest 
+import unittest
 import pandas as pd
 
 from dataValidPy.test_utils import test_pass, test_fail, test_warn
@@ -10,15 +10,15 @@ class DfTestClass(unittest.TestCase):
 
         super(DfTestClass, self).__init__(*args, **kwargs)
 
-        self.df_dct1 = {"col1": [2,6,5], 
-                        "col2": ["x", "y", "z"], 
+        self.df_dct1 = {"col1": [2,6,5],
+                        "col2": ["x", "y", "z"],
                         "col3": [True, False, True]}
 
-        self.df_dct2 = {"col1": [2,6,5], 
+        self.df_dct2 = {"col1": [2,6,5],
                         "col2": ["x", "y", "z"]}
 
-        self.df_dct3 = {"col1": [2,6,5], 
-                        "col2": ["x", "y", "z"], 
+        self.df_dct3 = {"col1": [2,6,5],
+                        "col2": ["x", "y", "z"],
                         "col3": [True, False, True],
                         "col4": [7, 8, 9]}
         

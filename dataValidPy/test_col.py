@@ -31,7 +31,7 @@ class test_values_class(col_setUp, test_fail):
         Initiates the test class to test the values of a column
         :param series: the column to test
         :type series: pandas series
-        :param expc_values: the expected values 
+        :param expc_values: the expected values
         :type expc_values: list
         """
         self.td = "Expected Values"
@@ -47,9 +47,9 @@ class test_values_class(col_setUp, test_fail):
     def _test_message(self):
         add_values_str = "\n".join(map(str, self.add_values))
         return "Additional values in col:{}".format(add_values_str)
-    
+
     def _test(self):
-        if len(self.add_values) == 0:  
+        if len(self.add_values) == 0:
             test_pass.__init__(self)
 
 class test_null_values_class(col_setUp, test_fail):

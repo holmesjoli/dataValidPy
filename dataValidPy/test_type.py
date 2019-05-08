@@ -5,7 +5,7 @@ class test_type_class(col_setUp, test_fail):
 
     def __init__(self, series, expc_type):
         """
-        Initiates test type class. Classes tests if the column meets the expected type condition. 
+        Initiates test type class. Classes tests if the column meets the expected type condition.
         :param series: the column to test
         :type series: pandas series
         :param expc_type: the expected type of the column
@@ -19,7 +19,7 @@ class test_type_class(col_setUp, test_fail):
         test_fail.__init__(self, tm = self._test_message())
 
         self._test()
-    
+
     def _test_message(self):
         return "Column is of type {}, but expected type is {}".format(self.col_type, self.expc_type)
 

@@ -78,7 +78,7 @@ class TypesTestClass(unittest.TestCase):
         self.assertTrue(hasattr(self.ttt9, "td"))
         self.assertEqual(self.ttt9.ti, test_fail("blah").ti)
         self.assertNotEqual(self.ttt9.tm, test_pass().tm)
-    
+
         self.assertTrue(hasattr(self.ttt10, "td"))
         self.assertEqual(self.ttt10.ti, test_fail("blah").ti)
         self.assertNotEqual(self.ttt10.tm, test_pass().tm)

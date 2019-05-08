@@ -52,7 +52,7 @@ class UtilsTestClass(unittest.TestCase):
         self.assertTrue(hasattr(self.df_setUp, "columns"))
         self.assertTrue(hasattr(self.df_setUp, "n_row"))
         self.assertTrue(hasattr(self.df_setUp, "n_col"))
-    
+
     def test_test_col_setUp(self):
         col_setUp1 = col_setUp(self.df.col1)
         col_setUp2 = col_setUp(self.df.col2)

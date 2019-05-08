@@ -76,7 +76,7 @@ class ColsTestClass(unittest.TestCase):
         self.assertTrue(hasattr(self.tv6, "td"))
         self.assertEqual(self.tv6.ti, test_fail("blah").ti)
         self.assertNotEqual(self.tv6.tm, test_pass().tm)
-        
+
     def test_test_null_values_class(self):
         self.assertTrue(hasattr(self.tnv1, "td"))
         self.assertEqual(self.tnv1.ti, test_pass().ti)

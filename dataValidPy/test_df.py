@@ -53,7 +53,7 @@ class test_unexpc_cols_class(df_setUp, test_warn):
         
     def _test_message(self):
         return "Extra columns: {}".format(", ".join(self.extra_cols))
-    
+
     def _test(self):
         if len(self.extra_cols) == 0:
             test_pass.__init__(self)

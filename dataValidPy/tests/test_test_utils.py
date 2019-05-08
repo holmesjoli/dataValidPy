@@ -29,13 +29,11 @@ class UtilsTestClass(unittest.TestCase):
         self.tf = test_fail(tm = "blah")
 
     def ti(self, tp, tw, tf):
-
         self.assertTrue(hasattr(tp, "ti"))
         self.assertTrue(hasattr(tw, "ti"))
         self.assertTrue(hasattr(tf, "ti"))
     
     def tm(self, tp, tw, tf):
-
         self.assertTrue(hasattr(tp, "tm"))
         self.assertTrue(hasattr(tw, "tm"))
         self.assertTrue(hasattr(tf, "tm"))
@@ -48,7 +46,6 @@ class UtilsTestClass(unittest.TestCase):
         self.tm(self.tp, self.tw, self.tf)
 
     def test_df_setUp(self):
-
         self.df_setUp = df_setUp(self.df)
 
         self.assertTrue(hasattr(self.df_setUp, "df"))
@@ -57,7 +54,6 @@ class UtilsTestClass(unittest.TestCase):
         self.assertTrue(hasattr(self.df_setUp, "n_col"))
     
     def test_test_col_setUp(self):
-
         col_setUp1 = col_setUp(self.df.col1)
         col_setUp2 = col_setUp(self.df.col2)
 

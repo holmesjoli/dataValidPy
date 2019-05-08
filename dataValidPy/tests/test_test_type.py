@@ -43,7 +43,6 @@ class TypesTestClass(unittest.TestCase):
         self.ttt20 = test_type_class(df.col4, "NUMBER")
 
     def test_test_type(self):
-
         self.assertTrue(hasattr(self.ttt1, "td"))
         self.assertEqual(self.ttt1.ti, test_pass().ti)
         self.assertEqual(self.ttt1.tm, test_pass().tm)

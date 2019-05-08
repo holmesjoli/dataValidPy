@@ -16,7 +16,6 @@ def cls_to_df(cl):
     Takes a class and converts the attributes to a dataframe
     """
     def wrapper(*args):
-
         x = cl(*args)
         return pd.DataFrame({"td": [x.td],
                              "ti": [x.ti],
@@ -27,25 +26,21 @@ def cls_to_df(cl):
 class col_level(object):
 
     def __init__(self):
-        
         self.variable = ""
 
 class df_level(object):
 
     def __init__(self):
-        
         self.dataframe = ""
 
 class test_pass_ti(object):
 
     def __init__(self):
-
         self.ti = "PASS"    
 
 class test_pass_tm(object):
 
     def __init__(self):
-
         self.tm = ""
 
 class test_pass(object):
@@ -54,21 +49,17 @@ class test_pass(object):
         """
         Initiates the tests pass class
         """
-
         test_pass_ti.__init__(self)
         test_pass_tm.__init__(self)
-
 
 class test_fail_ti(object):
 
     def __init__(self):
-
         self.ti = "ERROR"    
 
 class test_fail_tm(object):
 
     def __init__(self, tm):
-
         self.tm = tm
 
 class test_fail(object):
@@ -77,21 +68,17 @@ class test_fail(object):
         """
         Initiates the tests fail class
         """
-
         test_fail_ti.__init__(self)
         test_fail_tm.__init__(self, tm)
-
 
 class test_warn_ti(object):
 
     def __init__(self):
-
         self.ti = "WARNING"    
 
 class test_warn_tm(object):
 
     def __init__(self, tm):
-
         self.tm = tm
 
 class test_warn(object):
@@ -100,7 +87,6 @@ class test_warn(object):
         """
         Initiates the tests warn class
         """
-
         test_warn_ti.__init__(self)
         test_warn_tm.__init__(self, tm)
 
@@ -112,7 +98,6 @@ class df_setUp(object):
         :param df: the dataframe to do the testing on
         :type df: a pandas dataframe
         """
-
         self.df = df
         self.columns = self.df.columns
         self.n_row = self.df.shape[0]
@@ -126,7 +111,6 @@ class col_setUp(col_types):
         :param series: the column to test
         :type series: pandas series
         """
-
         col_types.__init__(self) 
         
         self.col = series

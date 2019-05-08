@@ -11,7 +11,6 @@ class test_type_class(col_setUp):
         :param expc_type: the expected type of the column
         :type expc_type: string
         """
-
         col_setUp.__init__(self, series)
 
         self.td = "Test column type"
@@ -25,7 +24,6 @@ class test_type_class(col_setUp):
         return "Column is of type {}, but expected type is {}".format(self.col_type, self.expc_type)
 
     def _test(self):
-
         if self.col_type == self.expc_type:
             test_pass.__init__(self)
         elif np.issubdtype(self.col_type, self.expc_type):

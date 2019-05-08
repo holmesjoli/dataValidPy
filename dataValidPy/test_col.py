@@ -10,7 +10,6 @@ class test_unique_class(col_setUp, test_fail):
         :param series: the column to test
         :type series: pandas series
         """
-
         self.td = "Unique Values"
 
         col_setUp.__init__(self, series)
@@ -22,7 +21,6 @@ class test_unique_class(col_setUp, test_fail):
         return "Not Unique"
 
     def _test(self):
-
         if self.col_len == self.len_uni_values:
             test_pass.__init__(self)
 
@@ -36,7 +34,6 @@ class test_values_class(col_setUp, test_fail):
         :param expc_values: the expected values 
         :type expc_values: list
         """
-
         self.td = "Expected Values"
         self.expc_values = expc_values
         col_setUp.__init__(self, series)
@@ -48,12 +45,10 @@ class test_values_class(col_setUp, test_fail):
         self._test()
 
     def _test_message(self):
-
         add_values_str = "\n".join(map(str, self.add_values))
         return "Additional values in col:{}".format(add_values_str)
     
     def _test(self):
-
         if len(self.add_values) == 0:  
             test_pass.__init__(self)
 
@@ -65,7 +60,6 @@ class test_null_values_class(col_setUp, test_fail):
         :param series: the column to test
         :type series: pandas series
         """
-
         self.td = "Null Values"
 
         col_setUp.__init__(self, series)
@@ -74,7 +68,6 @@ class test_null_values_class(col_setUp, test_fail):
         self._test()
 
     def _test(self):
-
         if pd.notnull(self.col).all():
             test_pass.__init__(self)
 

@@ -69,7 +69,6 @@ class NumericColsTestClass(unittest.TestCase):
         self.tileu4 = test_inclu_lower_exclu_upper_range_class(self.df.col1, 2, 10)
 
     def test_test_lt_value_class(self):
-
         self.assertTrue(hasattr(self.tltv1, "td"))
         self.assertEqual(self.tltv1.ti, test_pass().ti)
         self.assertEqual(self.tltv1.tm, test_pass().tm)
@@ -87,7 +86,6 @@ class NumericColsTestClass(unittest.TestCase):
         self.assertNotEqual(self.tltv4.tm, test_pass().tm)
 
     def test_test_lte_value_class(self):
-
         self.assertTrue(hasattr(self.tltev1, "td"))
         self.assertEqual(self.tltev1.ti, test_pass().ti)
         self.assertEqual(self.tltev1.tm, test_pass().tm)
@@ -113,7 +111,6 @@ class NumericColsTestClass(unittest.TestCase):
         self.assertNotEqual(self.tltev6.tm, test_pass().tm)
 
     def test_test_gt_value_class(self):
-
         self.assertTrue(hasattr(self.tgtv1, "td"))
         self.assertEqual(self.tgtv1.ti, test_pass().ti)
         self.assertEqual(self.tgtv1.tm, test_pass().tm)
@@ -131,7 +128,6 @@ class NumericColsTestClass(unittest.TestCase):
         self.assertNotEqual(self.tgtv4.tm, test_pass().tm)        
 
     def test_test_gte_value_class(self):
-
         self.assertTrue(hasattr(self.tgtev1, "td"))
         self.assertEqual(self.tgtev1.ti, test_pass().ti)
         self.assertEqual(self.tgtev1.tm, test_pass().tm)
@@ -157,7 +153,6 @@ class NumericColsTestClass(unittest.TestCase):
         self.assertNotEqual(self.tgtev6.tm, test_pass().tm)
 
     def test_test_inclu_value_range_class(self):
- 
         self.assertTrue(hasattr(self.tivr1, "td"))
         self.assertEqual(self.tivr1.ti, test_pass().ti)
         self.assertEqual(self.tivr1.tm, test_pass().tm)
@@ -187,7 +182,6 @@ class NumericColsTestClass(unittest.TestCase):
         self.assertNotEqual(self.tivr7.tm, test_pass().tm)
 
     def test_test_exclu_value_range_class(self):
-
         self.assertTrue(hasattr(self.tevr1, "td"))
         self.assertEqual(self.tevr1.ti, test_pass().ti)
         self.assertEqual(self.tevr1.tm, test_pass().tm)
@@ -205,7 +199,6 @@ class NumericColsTestClass(unittest.TestCase):
         self.assertNotEqual(self.tevr4.tm, test_pass().tm)
 
     def test_test_exclu_lower_inclu_upper_range_class(self):
-
         self.assertTrue(hasattr(self.teliu1, "td"))
         self.assertEqual(self.teliu1.ti, test_pass().ti)
         self.assertEqual(self.teliu1.tm, test_pass().tm)
@@ -223,7 +216,6 @@ class NumericColsTestClass(unittest.TestCase):
         self.assertNotEqual(self.teliu4.tm, test_pass().tm)
 
     def test_test_inclu_lower_exclu_upper_range_class(self):
-
         self.assertTrue(hasattr(self.tileu1, "td"))
         self.assertEqual(self.tileu1.ti, test_pass().ti)
         self.assertEqual(self.tileu1.tm, test_pass().tm)

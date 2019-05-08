@@ -31,7 +31,6 @@ class BoolColsTestClass(unittest.TestCase):
         self.tanf3 = test_any_false(self.df.col3)
 
     def test_test_all_true(self):
-
         self.assertTrue(hasattr(self.tat1, "td"))
         self.assertEqual(self.tat1.ti, test_pass().ti)
         self.assertEqual(self.tat1.tm, test_pass().tm)
@@ -45,7 +44,6 @@ class BoolColsTestClass(unittest.TestCase):
         self.assertNotEqual(self.tat3.tm, test_pass().tm)
 
     def test_test_all_false(self):
-
         self.assertTrue(hasattr(self.taf1, "td"))
         self.assertEqual(self.taf1.ti, test_fail("blah").ti)
         self.assertNotEqual(self.taf1.tm, test_pass().tm)
@@ -59,7 +57,6 @@ class BoolColsTestClass(unittest.TestCase):
         self.assertNotEqual(self.taf3.tm, test_pass().tm)
 
     def test_test_any_true(self):
-
         self.assertTrue(hasattr(self.tant1, "td"))
         self.assertEqual(self.tant1.ti, test_pass().ti)
         self.assertEqual(self.tant1.tm, test_pass().tm)
@@ -73,7 +70,6 @@ class BoolColsTestClass(unittest.TestCase):
         self.assertEqual(self.tant3.tm, test_pass().tm)
 
     def test_test_any_false(self):
-
         self.assertTrue(hasattr(self.tanf1, "td"))
         self.assertEqual(self.tanf1.ti, test_fail("blah").ti)
         self.assertNotEqual(self.tanf1.tm, test_pass().tm)

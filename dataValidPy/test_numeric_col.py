@@ -44,7 +44,6 @@ class test_less_than_value_class(col_setUp, upper_bound, test_fail):
         :param upper: numeric upper bound
         :type upper: float or int
         """
-
         self.td = "Less than value (<)"
 
         col_setUp.__init__(self, series)
@@ -57,7 +56,6 @@ class test_less_than_value_class(col_setUp, upper_bound, test_fail):
         return "Values outside of upper bound"
 
     def _test(self):
-        
         if self.max < self.upper:
             test_pass.__init__(self)
 
@@ -72,7 +70,6 @@ class test_less_than_or_equal_value_class(col_setUp, upper_bound, test_fail):
         :param upper: numeric upper bound
         :type upper: float or int
         """
-
         self.td = "Less than value (<=)"
 
         col_setUp.__init__(self, series)
@@ -99,7 +96,6 @@ class test_greater_than_value_class(col_setUp, lower_bound, test_fail):
         :param lower: numeric lower bound
         :type lower: float or int
         """
-
         self.td = "Greater than value (>)"
 
         col_setUp.__init__(self, series)
@@ -126,7 +122,6 @@ class test_greater_than_or_equal_value_class(col_setUp, lower_bound, test_fail):
         :param lower: numeric lower bound
         :type lower: float or int
         """
-
         self.td = "Greater than value (>)"
 
         col_setUp.__init__(self, series)
@@ -153,7 +148,6 @@ class value_range(col_setUp, lower_bound, upper_bound, test_fail):
         :param upper: numeric upper bound
         :type upper: float
         """
-
         col_setUp.__init__(self, series)
         lower_bound.__init__(self, lower)
         upper_bound.__init__(self, upper)
@@ -175,7 +169,6 @@ class test_exclu_value_range_class(value_range):
         :param upper: numeric upper bound
         :type upper: float
         """
-
         self.td = "Exclusive Range (lower < X < upper)"
         value_range.__init__(self, series, lower, upper)
     
@@ -198,7 +191,6 @@ class test_inclu_value_range_class(value_range):
         :param upper: numeric upper bound
         :type upper: float
         """
-
         self.td = "Inclusive Range (lower <= X <= upper)"
         value_range.__init__(self, series, lower, upper)
     
@@ -221,7 +213,6 @@ class test_exclu_lower_inclu_upper_range_class(value_range):
         :param upper: numeric upper bound
         :type upper: float
         """
-
         self.td = "Exclusive lower bound, inclusive upper bound (lower < X <= upper)"
         value_range.__init__(self, series, lower, upper)
     
@@ -244,7 +235,6 @@ class test_inclu_lower_exclu_upper_range_class(value_range):
         :param upper: numeric upper bound
         :type upper: float
         """
-
         self.td = "Inclusive lower bound, exclusive upper bound (lower <= X < upper)"
         value_range.__init__(self, series, lower, upper)
     

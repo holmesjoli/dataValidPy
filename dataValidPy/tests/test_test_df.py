@@ -21,7 +21,6 @@ class DfTestClass(unittest.TestCase):
                         "col2": ["x", "y", "z"], 
                         "col3": [True, False, True],
                         "col4": [7, 8, 9]}
-
         
         self.df1 = pd.DataFrame(self.df_dct1)
         self.df2 = pd.DataFrame(self.df_dct2)
@@ -38,7 +37,6 @@ class DfTestClass(unittest.TestCase):
         self.tuc3 = test_unexpc_cols_class(self.df3, self.expc_cols)
 
     def test_test_expc_cols(self):
-
         self.assertTrue(hasattr(self.tec1, "td"))
         self.assertEqual(self.tec1.ti, test_pass().ti)
         self.assertEqual(self.tec1.tm, test_pass().tm)
@@ -52,7 +50,6 @@ class DfTestClass(unittest.TestCase):
         self.assertEqual(self.tec3.tm, test_pass().tm)
 
     def test_test_unexpc_cols(self):
-
         self.assertTrue(hasattr(self.tuc1, "td"))
         self.assertEqual(self.tuc1.ti, test_pass().ti)
         self.assertEqual(self.tuc1.tm, test_pass().tm)

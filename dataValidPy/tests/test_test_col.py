@@ -36,7 +36,6 @@ class ColsTestClass(unittest.TestCase):
         self.tnv2 = test_null_values_class(self.df.col6)
 
     def test_test_expc_uni_class(self):
-
         self.assertTrue(hasattr(self.tu1, "td"))
         self.assertEqual(self.tu1.ti, test_pass().ti)
         self.assertEqual(self.tu1.tm, test_pass().tm)
@@ -54,7 +53,6 @@ class ColsTestClass(unittest.TestCase):
         self.assertNotEqual(self.tu4.tm, test_pass().tm)
     
     def test_test_expc_values_class(self):
-
         self.assertTrue(hasattr(self.tv1, "td"))
         self.assertEqual(self.tv1.ti, test_pass().ti)
         self.assertEqual(self.tv1.tm, test_pass().tm)
@@ -80,7 +78,6 @@ class ColsTestClass(unittest.TestCase):
         self.assertNotEqual(self.tv6.tm, test_pass().tm)
         
     def test_test_null_values_class(self):
-
         self.assertTrue(hasattr(self.tnv1, "td"))
         self.assertEqual(self.tnv1.ti, test_pass().ti)
         self.assertEqual(self.tnv1.tm, test_pass().tm)

@@ -1,6 +1,6 @@
-from dataValidPy.test_utils import test_pass, test_fail, col_setUp
+from dataValidPy.test_utils import test_pass, test_fail, col_setUp, cls_to_df
 
-class test_all_true(col_setUp, test_fail):
+class test_all_true_class(col_setUp, test_fail):
 
     def __init__(self, series):
 
@@ -16,7 +16,7 @@ class test_all_true(col_setUp, test_fail):
         if self.col.all():
             test_pass.__init__(self)
 
-class test_all_false(col_setUp, test_fail):
+class test_all_false_class(col_setUp, test_fail):
 
     def __init__(self, series):
 
@@ -32,7 +32,7 @@ class test_all_false(col_setUp, test_fail):
         if (self.col == False).all():
             test_pass.__init__(self)
 
-class test_any_true(col_setUp, test_fail):
+class test_any_true_class(col_setUp, test_fail):
 
     def __init__(self, series):
 
@@ -48,7 +48,7 @@ class test_any_true(col_setUp, test_fail):
         if self.col.any():
             test_pass.__init__(self)
 
-class test_any_false(col_setUp, test_fail):
+class test_any_false_class(col_setUp, test_fail):
 
     def __init__(self, series):
 
@@ -63,3 +63,20 @@ class test_any_false(col_setUp, test_fail):
 
         if (self.col == False).any():
             test_pass.__init__(self)
+
+@cls_to_df
+def test_all_true(series):
+    return test_all_true_class(series)
+
+@cls_to_df
+def test_all_false(series):
+    return test_all_false_class(series)
+
+@cls_to_df
+def test_any_true(series):
+    return test_any_true_class(series)
+
+@cls_to_df
+def test_any_false(series):
+    return test_any_false_class(series)
+    

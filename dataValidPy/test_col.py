@@ -13,12 +13,9 @@ class test_unique_class(col_setUp, test_fail):
         self.td = "Unique Values"
 
         col_setUp.__init__(self, series)
-        test_fail.__init__(self, tm = self._test_message())
+        test_fail.__init__(self, tm = "Not Unique")
 
         self._test()
-
-    def _test_message(self):
-        return "Not Unique"
 
     def _test(self):
         if self.col_len == self.len_uni_values:

@@ -48,13 +48,9 @@ class test_less_than_value_class(col_setUp, upper_bound, test_fail):
 
         col_setUp.__init__(self, series)
         upper_bound.__init__(self, upper)
-        test_fail.__init__(self, tm = self.__class__._test_message())
+        test_fail.__init__(self, tm = "Values outside of upper bound")
 
         self._test()
-
-    @staticmethod
-    def _test_message():
-        return "Values outside of upper bound"
 
     def _test(self):
         if self.max < self.upper:
@@ -75,13 +71,9 @@ class test_less_than_or_equal_value_class(col_setUp, upper_bound, test_fail):
 
         col_setUp.__init__(self, series)
         upper_bound.__init__(self, upper)
-        test_fail.__init__(self, tm = self.__class__._test_message())
+        test_fail.__init__(self, tm = "Values outside of upper bound")
 
         self._test()
-
-    @staticmethod
-    def _test_message():
-        return "Values outside of upper bound"
 
     def _test(self):
         if self.max <= self.upper:
@@ -102,13 +94,9 @@ class test_greater_than_value_class(col_setUp, lower_bound, test_fail):
 
         col_setUp.__init__(self, series)
         lower_bound.__init__(self, lower)
-        test_fail.__init__(self, tm = self.__class__._test_message())
+        test_fail.__init__(self, tm = "Values outside of lower bound")
 
         self._test()
-
-    @staticmethod
-    def _test_message():
-        return "Values outside of lower bound"
 
     def _test(self):
         if self.min > self.lower:
@@ -129,13 +117,9 @@ class test_greater_than_or_equal_value_class(col_setUp, lower_bound, test_fail):
 
         col_setUp.__init__(self, series)
         lower_bound.__init__(self, lower)
-        test_fail.__init__(self, tm = self.__class__._test_message())
+        test_fail.__init__(self, tm = "Values outside of lower bound")
 
         self._test()
-
-    @staticmethod
-    def _test_message():
-        return "Values outside of lower bound"
 
     def _test(self):
         if self.min >= self.lower:
@@ -155,11 +139,7 @@ class value_range(col_setUp, lower_bound, upper_bound, test_fail):
         col_setUp.__init__(self, series)
         lower_bound.__init__(self, lower)
         upper_bound.__init__(self, upper)
-        test_fail.__init__(self, tm = self.__class__._test_message())
-
-    @staticmethod
-    def _test_message():
-        return "Values outside of range"
+        test_fail.__init__(self, tm = "Values outside of range")
 
 class test_exclu_value_range_class(value_range):
 

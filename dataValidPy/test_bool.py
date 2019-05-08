@@ -7,12 +7,9 @@ class test_all_true(col_setUp, test_fail):
         self.td = "All true"
 
         col_setUp.__init__(self, series)
-        test_fail.__init__(self, tm = self._test_message())
+        test_fail.__init__(self, tm = "Not all True")
 
         self._test()
-
-    def _test_message(self):
-        return "Not all True"
 
     def _test(self):
 
@@ -26,12 +23,9 @@ class test_all_false(col_setUp, test_fail):
         self.td = "All false"
 
         col_setUp.__init__(self, series)
-        test_fail.__init__(self, tm = self._test_message())
+        test_fail.__init__(self, tm = "Not all False")
 
         self._test()
-
-    def _test_message(self):
-        return "Not all False"
 
     def _test(self):
 
@@ -46,12 +40,9 @@ class test_any_true(col_setUp, test_fail):
         self.td = "Any True"
 
         col_setUp.__init__(self, series)
-        test_fail.__init__(self, tm = self._test_message())
+        test_fail.__init__(self, tm = "All False")
 
         self._test()
-
-    def _test_message(self):
-        return "All False"
 
     def _test(self):
 
@@ -65,15 +56,11 @@ class test_any_false(col_setUp, test_fail):
         self.td = "Any False"
 
         col_setUp.__init__(self, series)
-        test_fail.__init__(self, tm = self._test_message())
+        test_fail.__init__(self, tm = "All True")
 
         self._test()
-
-    def _test_message(self):
-        return "All True"
 
     def _test(self):
 
         if (self.col == False).any():
             test_pass.__init__(self)
-

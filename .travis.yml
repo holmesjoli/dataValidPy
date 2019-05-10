@@ -1,4 +1,5 @@
 language: python
 rvm:
   - 3.7.2
-  
+script:
+  - git clone https://github.com/holmesjoli/validPy.git

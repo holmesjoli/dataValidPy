@@ -1,9 +1,10 @@
 import unittest
 import pandas as pd
 
-from dataValidPy.test_utils import test_pass, test_fail
-from dataValidPy.test_bool import test_all_true_class, test_all_false_class, \
+from validPy.test_utils import test_pass, test_fail
+from validPy.test_bool import test_all_true_class, test_all_false_class, \
     test_any_true_class, test_any_false_class
+
 
 class BoolColsTestClass(unittest.TestCase):
 

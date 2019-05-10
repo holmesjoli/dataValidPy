@@ -1,13 +1,14 @@
 import unittest
 import pandas as pd
 
-from dataValidPy.test_numeric_col import test_less_than_value_class, \
+from validPy.test_numeric_col import test_less_than_value_class, \
     test_less_than_or_equal_value_class, \
     test_greater_than_value_class, test_greater_than_or_equal_value_class, \
     test_exclu_value_range_class, test_inclu_value_range_class, \
-    test_exclu_lower_inclu_upper_range_class, test_inclu_lower_exclu_upper_range_class
+    test_exclu_lower_inclu_upper_range_class, \
+    test_inclu_lower_exclu_upper_range_class
+from validPy.test_utils import test_pass, test_fail
 
-from dataValidPy.test_utils import test_pass, test_fail
 
 class NumericColsTestClass(unittest.TestCase):
 

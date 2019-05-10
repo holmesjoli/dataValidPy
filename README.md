@@ -1,6 +1,6 @@
 # Data Valid Py
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/47e083a7aaae4a9ab3de1ec6e8014b38)](https://www.codacy.com/app/holmesjoli/dataValidPy?utm_source=github.com&utm_medium=referral&utm_content=holmesjoli/dataValidPy&utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/47e083a7aaae4a9ab3de1ec6e8014b38)](https://www.codacy.com/app/holmesjoli/validPy?utm_source=github.com&utm_medium=referral&utm_content=holmesjoli/validPy&utm_campaign=Badge_Grade)
 
 The data valid Py package is a package built to help with data validation.
 

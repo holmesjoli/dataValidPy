@@ -1,6 +1,7 @@
 import numpy as np
 
-from dataValidPy.test_utils import test_pass, test_fail, col_setUp, cls_to_df
+from validPy.test_utils import test_pass, test_fail, col_setUp, cls_to_df
+
 
 def numeric_error(number):
     """

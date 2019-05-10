@@ -1,4 +1,5 @@
-from dataValidPy.test_utils import test_pass, test_fail, col_setUp, cls_to_df
+from validPy.test_utils import test_pass, test_fail, col_setUp, cls_to_df
+
 
 class test_all_true_class(col_setUp, test_fail):
 

@@ -1,8 +1,9 @@
 import unittest
 import pandas as pd
 
-from dataValidPy.test_utils import test_pass, test_fail, test_warn
-from dataValidPy.test_df import test_expc_cols_class, test_unexpc_cols_class
+from validPy.test_utils import test_pass, test_fail, test_warn
+from validPy.test_df import test_expc_cols_class, test_unexpc_cols_class
+
 
 class DfTestClass(unittest.TestCase):
 

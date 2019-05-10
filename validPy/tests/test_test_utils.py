@@ -1,9 +1,10 @@
 import unittest
 import pandas as pd
 
-from dataValidPy.test_utils import test_pass_ti, test_pass_tm, test_pass, \
-     test_warn_ti, test_warn_tm, test_warn, test_fail_ti, test_fail_tm, test_fail, df_setUp, \
-     col_setUp
+from validPy.test_utils import test_pass_ti, test_pass_tm, test_pass, \
+     test_warn_ti, test_warn_tm, test_warn, test_fail_ti, test_fail_tm, \
+     test_fail, df_setUp, col_setUp
+
 
 class UtilsTestClass(unittest.TestCase):
 
